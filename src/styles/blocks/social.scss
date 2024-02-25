@@ -1,0 +1,18 @@
+.social__list {
+  display: flex;
+
+} 
+
+.social__item {
+  height: 43px;
+  width: 43px;
+  margin-right: 30px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  cursor: pointer;
+};

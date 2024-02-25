@@ -1,0 +1,27 @@
+// header {
+//   // color: $main-color;
+//   // background-color: $back-color;
+
+//   display: flex;
+
+//   @media (max-width: 768px) {
+//     height: 50vh;
+// }
+  
+// }
+
+.header {
+  color: $colorText;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 2px solid $colorText;
+}
+
+.header__container {
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+};
+

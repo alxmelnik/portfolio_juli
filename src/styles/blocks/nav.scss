@@ -1,0 +1,17 @@
+// .nav {
+//   @media (max-width: 768px) {
+//     color: red;}
+// }
+
+.nav_list {
+  display: flex;
+};
+
+.nav__item {
+  
+  margin-right: 75px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
