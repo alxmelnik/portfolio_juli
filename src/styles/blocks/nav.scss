@@ -5,13 +5,32 @@
 
 .nav_list {
   display: flex;
-};
+}
 
 .nav__item {
-  
   margin-right: 75px;
-  
+
   &:last-child {
     margin-right: 0;
   }
+}
+
+.nav__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    transition: 0.3s;
+    height: 1px;
+    background: $colorText;
+  }
+
+  &:hover:after {
+    width: 100%;
+  };
 }
