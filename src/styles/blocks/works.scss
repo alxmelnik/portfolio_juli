@@ -1,0 +1,33 @@
+
+.works {
+  margin-bottom: 100px;
+};
+
+.works__container {
+  max-width: 960px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+};
+
+.works__title {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 85px;
+  color: $colorText;
+  margin-bottom: 30px;
+}
+
+.works__content {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 80px;
+  flex-wrap: wrap;
+};
+
+.works__image {
+  width: 396px;
+};
