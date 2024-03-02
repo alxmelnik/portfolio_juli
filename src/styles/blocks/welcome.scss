@@ -40,6 +40,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .welcome__quote {

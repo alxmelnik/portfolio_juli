@@ -1,6 +1,6 @@
 
 .works {
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 };
 
 .works__container {
@@ -19,6 +19,8 @@
   line-height: 85px;
   color: $colorText;
   margin-bottom: 30px;
+
+  text-align: center
 }
 
 .works__content {
@@ -26,6 +28,11 @@
   justify-content: space-between;
   row-gap: 80px;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 850px) {
+    justify-content: center;
+  }
+
 };
 
 .works__image {

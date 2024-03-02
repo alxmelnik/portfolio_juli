@@ -1,7 +1,8 @@
-// .nav {
-//   @media (max-width: 768px) {
-//     color: red;}
-// }
+.nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 
 .nav_list {
   display: flex;
