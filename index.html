@@ -59,6 +59,9 @@
               </li>
             </ul>
           </nav>
+          <div class="header__hamburger">
+            <img src="img/header/hamburger.png" alt="меню" />
+          </div>
         </div>
       </header>
       <main class="main">
@@ -74,7 +77,7 @@
               </div>
 
               <div class="btn">
-                <a href="#" class="btn__link">Купить</a>
+                <a href="#order" class="btn__link">Купить</a>
               </div>
             </div>
 
@@ -137,6 +140,60 @@
           </div>
         </section>
 
+        <!-- Order -->
+        <section class="order" id="order">
+          <div class="container order__container">
+            <h2 class="order__title">Заказать работу</h2>
+
+            <div class="order__content">
+              <div class="order__left">
+                <div class="order__img">
+                  <img src="img/order/order1.png" alt="девочка" />
+                </div>
+              </div>
+
+              <div class="order__right">
+                <form action="" class="form">
+                  <div class="form__row">
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Имя..."
+                      required
+                    />
+                  </div>
+                  <div class="form__row">
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="date"
+                      name="date"
+                      placeholder="Дата..."
+                      required
+                    />
+                  </div>
+                  <div class="form__row">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="Телефон..."
+                      required
+                    />
+                  </div>
+
+                  <button class="form__btn" type="submit" value="Заказать">
+                    Заказать
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- Reviews -->
 
         <section class="reviews" id="reviews">
@@ -160,7 +217,9 @@
                   </div>
                   <div class="reviews__username">Анна</div>
                   <p class="reviews__text">
-                    С другой стороны укрепление и развитие структуры представляет собой интересный эксперимент проверки форм развития.
+                    С другой стороны укрепление и развитие структуры
+                    представляет собой интересный эксперимент проверки форм
+                    развития.
                   </p>
                 </li>
                 <li class="reviews__item">
@@ -169,7 +228,8 @@
                   </div>
                   <div class="reviews__username">Алексей</div>
                   <p class="reviews__text">
-                    Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют от нас анализа новых предложений.
+                    Разнообразный и богатый опыт дальнейшее развитие различных
+                    форм деятельности требуют от нас анализа новых предложений.
                   </p>
                 </li>
               </ul>
