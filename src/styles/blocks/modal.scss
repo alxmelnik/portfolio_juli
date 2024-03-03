@@ -1,0 +1,67 @@
+.modal {
+  display: none;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $colorText;
+  font-size: 32px;
+  font-weight: bold;
+
+  // background-color: rgb(0,0,0);
+  background-color: $backcolorDesc;
+
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  height: 100vh;
+  z-index: 100;
+}
+
+.modal__item {
+  margin-bottom: 50%;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    transition: 0.3s;
+    height: 1px;
+    background: $colorText;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.close__icon {
+  fill: $colorText;
+  width: 40px;
+  height: 40px;
+}

@@ -1,10 +1,15 @@
-.nav {
+.nav { 
+
+  color: $colorText;
+  font-size: 32px;
+  font-weight: bold;
+  
   @media screen and (max-width: 768px) {
     display: none;
   }
 }
 
-.nav_list {
+.nav__list {
   display: flex;
 }
 
