@@ -27,7 +27,34 @@
 }
 
 .about__img {
+  position: relative;
   max-width: 514px;
+  z-index: 10;
+
+  &::before {
+    content: url("img/pattern/pattern1.png");
+    position: absolute;
+    top: -52px;
+    left: -94px;
+    width: 562px;
+    height: 108px;
+    
+   
+    z-index: -10;
+  }
+
+  &::after {
+    content: url("img/pattern/pattern1.png");
+    position: absolute;
+    bottom: -71px;
+    right: -97px;
+    width: 562px;
+    height: 108px;
+    
+    
+    z-index: -10;
+  }
+
 }
 
 .about__right {
@@ -53,9 +80,7 @@
     left: 0;
     width: 800px;
     height: 800px;
-    // opacity: 0.5;
-
-
+    
     background-color: $backcolorDesc;
     border-radius: 50%;
     z-index: -10;

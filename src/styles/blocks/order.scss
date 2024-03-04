@@ -1,5 +1,10 @@
 .order {
+  position: relative;
+  
   margin-bottom: 25px;
+  
+  z-index: 20;
+
 }
 
 .order__container {
@@ -35,7 +40,34 @@
 }
 
 .order__img {
+  position: relative;
   max-width: 461px;
+  z-index: 10;
+
+  &::before {
+    content: url("img/pattern/pattern2.png");
+    position: absolute;
+    top: -35px;
+    left: -59px;
+    width: 76px;
+    height: 400px;
+    
+   
+    z-index: -10;
+  }
+
+  &::after {
+    content: url("img/pattern/pattern2.png");
+    position: absolute;
+    bottom: -42px;
+    right: -32px;
+    width: 76px;
+    height: 400px;
+    
+    
+    z-index: -10;
+  }
+
 }
 
 .order__right {

@@ -23,7 +23,9 @@
   color: $colorText;
   margin-bottom: 30px;
 
-  text-align: center
+  text-align: center;
+
+  z-index: 20;
 }
 
 .works__content {
@@ -39,5 +41,33 @@
 };
 
 .works__image {
+  position: relative;
   width: 396px;
+  z-index: 10;
+
+  &:first-child::before {
+    content: url("img/pattern/pattern2.png");
+    position: absolute;
+    top: -58px;
+    left: -38px;
+    width: 76px;
+    height: 400px;
+    
+    z-index: -10;
+  };
+
+
+  &:last-child::after {
+    content: url("img/pattern/pattern3.png");
+    position: absolute;
+    bottom: -37px;
+    right: -69px;
+    width: 400px;
+    height: 76px;
+
+    
+    z-index: -10;
+  };
+
+  
 };
