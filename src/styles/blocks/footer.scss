@@ -2,7 +2,12 @@
   font-family: "Playfair Display";
   color: $colorTextParag;
 
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  background-image: url("img/footer/footer1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .footer__container {

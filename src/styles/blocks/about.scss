@@ -38,20 +38,22 @@
   max-width: 610px;
   color: $colorTextParag;
 
-  // background-color: $backcolorDesc;
-  // border-radius: 50%;
-  padding: 66px 48px 0;
+  padding: 0px 48px 0 110px;
 
   z-index: 10;
+
+  @media screen and (max-width: 426px) {
+    padding: 0px 10px;
+  }
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -80px;
     left: 0;
     width: 800px;
     height: 800px;
-    opacity: 0.5;
+    // opacity: 0.5;
 
 
     background-color: $backcolorDesc;
@@ -61,7 +63,7 @@
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 426px) {
   .about__right::after{
     content: none;
   };
@@ -83,6 +85,7 @@
   font-weight: 200;
   letter-spacing: 0.2em;
   margin-bottom: 93px;
+  text-align: center
 }
 
 .about__desc {
